@@ -89,7 +89,7 @@ const Form = () => {
           </div>
           <h2 style={{ color: "blue", marginBottom: "2rem" }} className="text-center">Loading Form</h2>
           <div className="row">
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="date" className="mb-2">Date</label>
                 <input
@@ -103,7 +103,7 @@ const Form = () => {
                 />
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="time" className="mb-2">Time</label>
                 <input
@@ -118,7 +118,7 @@ const Form = () => {
               </div>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="giestyle" className="mb-2">GIE Style</label>
                 <input
@@ -135,7 +135,7 @@ const Form = () => {
                 )}
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="buyer" className="mb-2">Buyer</label>
                 <input
@@ -150,7 +150,7 @@ const Form = () => {
                 )}
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="color" className="mb-2">Color</label>
                 <input
@@ -165,7 +165,7 @@ const Form = () => {
                 )}
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6 col-sm-12">
               <div className="mb-3">
                 <label htmlFor="buyerStyle" className="mb-2">Buyer Style</label>
                 <input
@@ -199,7 +199,7 @@ const Form = () => {
 
             <div className="mb-3">
               <label htmlFor="size" className="mb-2">Size</label>
-              <div className="d-flex align-items-center">
+              <div className=" d-flex align-items-center">
                 {[...Array(9)].map((_, index) => (
                   <div key={index} className="me-2">
                     <input
@@ -216,7 +216,7 @@ const Form = () => {
 
             <div className="mb-3">
               <label htmlFor="loadingQty" className="mb-2">Loading QTY</label>
-              <div className="d-flex align-items-center">
+              <div className=" d-flex align-items-center ">
                 {[...Array(9)].map((_, index) => (
                   <div key={index} className="me-2">
                     <input
@@ -244,7 +244,7 @@ const Form = () => {
                 <div className="text-danger">{errors.notes.message}</div>
               )}
             </div>
-            <div className="col-md-12">
+            <div className="col-md-12 col-sm-12">
               <button
                 type="submit"
                 className="btn btn-secondary w-100 fw-bold fs-5 mb-5"
