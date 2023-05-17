@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    max-width: 900px;
+}
+
+
+.logo img{
+  width: 10rem;
+  height: auto;
+}
+
+.card{
+  padding: 0 3rem;
+}
