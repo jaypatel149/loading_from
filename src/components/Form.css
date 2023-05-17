@@ -22,6 +22,17 @@
     flex-wrap: wrap;
     gap: 1rem;
   }
-
+  .me-2{
+    flex: auto;
+  }
+  .logo img{
+    width: 5rem;
+  }
+  .logo h1{
+    font-size: 1.5rem;
+  }
+  .card h2{
+    font-size: 1.2rem;
+  }
   
 }
