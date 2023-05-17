@@ -45,6 +45,8 @@ const Form = () => {
           time: getCurrentTime(),
           giestyle: data.giestyle?.trim().toUpperCase(),
           buyer: data.buyer?.trim().toUpperCase(),
+          color: data.color?.trim().toUpperCase(),
+          buyerStyle: data.buyerStyle?.trim().toUpperCase(),
           line: data.line?.trim().toUpperCase(),
           size,
           loadingQty,
@@ -57,7 +59,7 @@ const Form = () => {
 
     if (loadingData.length > 0) {
       axios
-        .post('https://sheet.best/api/sheets/329afb5b-780d-4f46-81b7-0268fb2e4a4d',
+        .post('https://sheet.best/api/sheets/5bc16b0f-84f1-4319-bf2f-f6e015190056',
           loadingData
         )
         .then((response) => {
@@ -145,6 +147,38 @@ const Form = () => {
                 />
                 {errors.buyer && (
                   <div className="text-danger">{errors.buyer.message}</div>
+                )}
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="mb-3">
+                <label htmlFor="color" className="mb-2">Color</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="color"
+                  name="color"
+                  {...register("color", { required: "Color is required." })}
+                />
+                {errors.color && (
+                  <div className="text-danger">{errors.color.message}</div>
+                )}
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="mb-3">
+                <label htmlFor="buyerStyle" className="mb-2">Buyer Style</label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="buyerStyle"
+                  name="buyerStyle"
+                  {...register("buyerStyle", {
+                    required: "Buyer Style is required.",
+                  })}
+                />
+                {errors.buyerStyle && (
+                  <div className="text-danger">{errors.buyerStyle.message}</div>
                 )}
               </div>
             </div>
